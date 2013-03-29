@@ -4060,15 +4060,15 @@ input[type="submit"].btn.btn-mini {
   border-radius: 6px 0 6px 6px;
 }
 .navbar-inverse .navbar-inner {
-  background-color: #750d03;
-  background-image: -moz-linear-gradient(top, #8f1003, #4f0902);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#8f1003), to(#4f0902));
-  background-image: -webkit-linear-gradient(top, #8f1003, #4f0902);
-  background-image: -o-linear-gradient(top, #8f1003, #4f0902);
-  background-image: linear-gradient(to bottom, #8f1003, #4f0902);
+  background-color: #710807;
+  background-image: -moz-linear-gradient(top, #5e0a03, #8d050c);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#5e0a03), to(#8d050c));
+  background-image: -webkit-linear-gradient(top, #5e0a03, #8d050c);
+  background-image: -o-linear-gradient(top, #5e0a03, #8d050c);
+  background-image: linear-gradient(to bottom, #5e0a03, #8d050c);
   background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff8f1003', endColorstr='#ff4f0902', GradientType=0);
-  border-color: #750d03;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff5e0a03', endColorstr='#ff8d050c', GradientType=0);
+  border-color: #fcbd00;
 }
 .navbar-inverse .brand,
 .navbar-inverse .nav > li > a {
@@ -4096,7 +4096,7 @@ input[type="submit"].btn.btn-mini {
 .navbar-inverse .nav .active > a:hover,
 .navbar-inverse .nav .active > a:focus {
   color: #ffffff;
-  background-color: #4f0902;
+  background-color: #8d050c;
 }
 .navbar-inverse .navbar-link {
   color: #fab600;
@@ -4106,13 +4106,13 @@ input[type="submit"].btn.btn-mini {
   color: #ffffff;
 }
 .navbar-inverse .divider-vertical {
-  border-left-color: #4f0902;
-  border-right-color: #8f1003;
+  border-left-color: #8d050c;
+  border-right-color: #5e0a03;
 }
 .navbar-inverse .nav li.dropdown.open > .dropdown-toggle,
 .navbar-inverse .nav li.dropdown.active > .dropdown-toggle,
 .navbar-inverse .nav li.dropdown.open.active > .dropdown-toggle {
-  background-color: #4f0902;
+  background-color: #8d050c;
   color: #ffffff;
 }
 .navbar-inverse .nav li.dropdown > a:hover .caret,
@@ -4132,8 +4132,8 @@ input[type="submit"].btn.btn-mini {
 }
 .navbar-inverse .navbar-search .search-query {
   color: #ffffff;
-  background-color: #cb1705;
-  border-color: #4f0902;
+  background-color: #f71b26;
+  border-color: #8d050c;
   -webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,.1), 0 1px 0 rgba(255,255,255,.15);
   -moz-box-shadow: inset 0 1px 2px rgba(0,0,0,.1), 0 1px 0 rgba(255,255,255,.15);
   box-shadow: inset 0 1px 2px rgba(0,0,0,.1), 0 1px 0 rgba(255,255,255,.15);
@@ -4166,17 +4166,17 @@ input[type="submit"].btn.btn-mini {
 .navbar-inverse .btn-navbar {
   color: #ffffff;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
-  background-color: #5c0a02;
-  background-image: -moz-linear-gradient(top, #760d02, #360601);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#760d02), to(#360601));
-  background-image: -webkit-linear-gradient(top, #760d02, #360601);
-  background-image: -o-linear-gradient(top, #760d02, #360601);
-  background-image: linear-gradient(to bottom, #760d02, #360601);
+  background-color: #580605;
+  background-image: -moz-linear-gradient(top, #450702, #74040a);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#450702), to(#74040a));
+  background-image: -webkit-linear-gradient(top, #450702, #74040a);
+  background-image: -o-linear-gradient(top, #450702, #74040a);
+  background-image: linear-gradient(to bottom, #450702, #74040a);
   background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff760d02', endColorstr='#ff360601', GradientType=0);
-  border-color: #360601 #360601 #000000;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff450702', endColorstr='#ff74040a', GradientType=0);
+  border-color: #74040a #74040a #2a0204;
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
-  *background-color: #360601;
+  *background-color: #74040a;
   /* Darken IE7 buttons by default so they stand out more given they won't have borders */
 
   filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
@@ -4188,12 +4188,30 @@ input[type="submit"].btn.btn-mini {
 .navbar-inverse .btn-navbar.disabled,
 .navbar-inverse .btn-navbar[disabled] {
   color: #ffffff;
-  background-color: #360601;
-  *background-color: #1d0301;
+  background-color: #74040a;
+  *background-color: #5c0308;
 }
 .navbar-inverse .btn-navbar:active,
 .navbar-inverse .btn-navbar.active {
-  background-color: #040000 \9;
+  background-color: #430206 \9;
+}
+.navbar-inner {
+  padding: 20px;
+}
+.navbar .brand {
+  background: transparent url(../img/jsp-text.png) no-repeat left center;
+  content: '';
+  text-indent: -99999px;
+  width: 100px;
+  background-size: auto 100%;
+  margin-right: 20px;
+}
+.navbar .nav > .active > a,
+.navbar .nav > .active > a:hover,
+.navbar .nav > .active > a:focus {
+  -webkit-box-shadow: inset 0 1px 10px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: inset 0 1px 10px rgba(0, 0, 0, 0.5);
+  box-shadow: inset 0 1px 10px rgba(0, 0, 0, 0.5);
 }
 .breadcrumb {
   padding: 8px 15px;
@@ -5253,7 +5271,22 @@ a.badge:focus {
 .affix {
   position: fixed;
 }
-body:after {
+html,
+body {
+  height: 100%;
+  /* The html and body elements cannot have any padding or margin. */
+
+}
+/* Wrapper for page content to push down footer */
+#wrap {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  /* Negative indent footer by it's height */
+
+  margin: 0 auto -140px;
+}
+#wrap:after {
   content: '';
   display: block;
   position: absolute;
@@ -5263,11 +5296,27 @@ body:after {
   left: 0;
   background: url(../img/jsp-pattern.png) repeat center center;
 }
+.overlay-image {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: url(../img/jsp-pattern.png) repeat center center;
+}
+/* Set the fixed height of the footer here */
+#push,
+#footer {
+  height: 140px;
+}
 .section-title {
   position: relative;
   background-color: #005090;
   color: #fff;
   padding: 20px 0;
+  padding-top: 90px;
   height: 250px;
   border-bottom: 2px solid #002f58;
   background-color: #002f58;
@@ -5290,11 +5339,16 @@ body:after {
   position: relative;
   z-index: 2;
 }
-.section-title .sub-title {
-  background-color: rgba(250, 182, 0, 0.5);
+.section-title .logo {
+  background: transparent url(../img/jsp-title.png) no-repeat center center;
+  background-size: 100% auto;
+  margin-top: 10px;
+  padding: 30px 0;
 }
 .section-title h2 {
-  letter-spacing: 0.25em;
+  letter-spacing: 0.45em;
+  line-height: 35px;
+  text-shadow: 0 2px 3px rgba(0, 0, 0, 0.25);
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1) {
   .section-title:after {
@@ -5310,4 +5364,13 @@ body:after {
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
   -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+}
+.section-footer {
+  border-top: 2px solid #fab600;
+  color: #ffffff;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+  background: #555555 url(../img/jsp-pattern.png) repeat center center;
+}
+.section-footer .container {
+  padding: 10px 0;
 }
