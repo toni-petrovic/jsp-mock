@@ -1,0 +1,25 @@
+@media (min-width: 1200px) {
+	@oversize: 40;
+  .container {
+  	&.oversize {
+  		.span-over(@gridColumnWidth1200, @gridGutterWidth1200, @gridColumns, @oversize);
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+	@oversize: 20;
+  .container {
+  	&.oversize {
+  		.span-over (@gridColumnWidth768, @gridGutterWidth768, @gridColumns, @oversize);
+  	}
+  }
+}
+
+@media (max-width: 767px) {
+	.container {
+		&.oversize {
+			width: auto;
+		}
+	}	
+}

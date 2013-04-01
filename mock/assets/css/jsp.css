@@ -4199,7 +4199,7 @@ input[type="submit"].btn.btn-mini {
   padding: 20px;
 }
 .navbar .brand {
-  background: transparent url(../img/jsp-text.png) no-repeat left center;
+  background: transparent url(jsp/../img/jsp-text.png) no-repeat left center;
   content: '';
   text-indent: -99999px;
   width: 100px;
@@ -5105,6 +5105,92 @@ a.badge:focus {
   padding: 9px 15px;
   border-top: 1px solid #e5e5e5;
 }
+.accordion {
+  margin-bottom: 20px;
+}
+.accordion-group {
+  margin-bottom: 15px;
+  border: none;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+}
+.accordion-group:last-child {
+  margin-bottom: 0px;
+}
+.accordion-heading {
+  border-bottom: 0;
+  width: 110%;
+  margin-left: -5%;
+  color: #333333;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+  background-color: #006dcc;
+  background-image: -moz-linear-gradient(top, #0088cc, #0044cc);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#0088cc), to(#0044cc));
+  background-image: -webkit-linear-gradient(top, #0088cc, #0044cc);
+  background-image: -o-linear-gradient(top, #0088cc, #0044cc);
+  background-image: linear-gradient(to bottom, #0088cc, #0044cc);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0088cc', endColorstr='#ff0044cc', GradientType=0);
+  border-color: #0044cc #0044cc #002a80;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  *background-color: #0044cc;
+  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
+
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+  -webkit-border-radius: 4px 0 0 4px;
+  -moz-border-radius: 4px 0 0 4px;
+  border-radius: 4px 0 0 4px;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.35);
+  -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.35);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.35);
+  border: 1px solid #006cc3;
+  *border: 0;
+  border-bottom-color: #005090;
+  position: relative;
+}
+.accordion-heading:hover,
+.accordion-heading:focus,
+.accordion-heading:active,
+.accordion-heading.active,
+.accordion-heading.disabled,
+.accordion-heading[disabled] {
+  color: #333333;
+  background-color: #0044cc;
+  *background-color: #003bb3;
+}
+.accordion-heading:active,
+.accordion-heading.active {
+  background-color: #003399 \9;
+}
+.accordion-heading a {
+  color: #fff;
+  text-shadow: 0 1px 0 #002f58;
+  text-decoration: none;
+}
+.accordion-heading:before {
+  display: block;
+  content: "";
+  position: absolute;
+  border-style: solid;
+  border-color: #003d72 transparent;
+  width: 0;
+  left: auto;
+  right: -1px;
+  bottom: -13px;
+  border-width: 12px 15px 0 0;
+}
+.accordion-heading .accordion-toggle {
+  display: block;
+  padding: 8px 15px;
+}
+.accordion-toggle {
+  cursor: pointer;
+}
+.accordion-inner {
+  padding: 9px 15px;
+  border: none;
+}
 .carousel {
   position: relative;
   margin-bottom: 20px;
@@ -5294,7 +5380,7 @@ body {
   right: 0;
   bottom: 0;
   left: 0;
-  background: url(../img/jsp-pattern.png) repeat center center;
+  background: url("jsp/jsp/../img/jsp-pattern.png") repeat center center;
 }
 .overlay-image {
   content: '';
@@ -5304,7 +5390,7 @@ body {
   right: 0;
   bottom: 0;
   left: 0;
-  background: url(../img/jsp-pattern.png) repeat center center;
+  background: url("jsp/../img/jsp-pattern.png") repeat center center;
 }
 /* Set the fixed height of the footer here */
 #push,
@@ -5340,7 +5426,7 @@ body {
   z-index: 2;
 }
 .section-title .logo {
-  background: transparent url(../img/jsp-title.png) no-repeat center center;
+  background: transparent url("jsp/../img/jsp-title.png") no-repeat center center;
   background-size: 100% auto;
   margin-top: 10px;
   padding: 30px 0;
@@ -5357,19 +5443,37 @@ body {
 }
 .section-content .container {
   margin-top: -50px;
-  padding: 10px 20px;
   position: relative;
   z-index: 3;
   background-color: #ffffff;
-  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
-  -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.45);
+  -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.45);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.45);
+  -webkit-border-radius: 0 4px 4px 0;
+  -moz-border-radius: 0 4px 4px 0;
+  border-radius: 0 4px 4px 0;
+}
+.section-accordion {
+  background-color: #d5d5d5;
+  background-image: -moz-linear-gradient(left, #999999, #d5d5d5);
+  background-image: -webkit-gradient(linear, 0 0, 100% 0, from(#999999), to(#d5d5d5));
+  background-image: -webkit-linear-gradient(left, #999999, #d5d5d5);
+  background-image: -o-linear-gradient(left, #999999, #d5d5d5);
+  background-image: linear-gradient(to right, #999999, #d5d5d5);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff999999', endColorstr='#ffd5d5d5', GradientType=1);
+  -webkit-box-shadow: inset 10px 0px 20px -10px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: inset 10px 0px 20px -10px rgba(0, 0, 0, 0.5);
+  box-shadow: inset 10px 0px 20px -10px rgba(0, 0, 0, 0.5);
+  -webkit-border-radius: 0 4px 4px 0;
+  -moz-border-radius: 0 4px 4px 0;
+  border-radius: 0 4px 4px 0;
 }
 .section-footer {
   border-top: 2px solid #fab600;
   color: #ffffff;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
-  background: #555555 url(../img/jsp-pattern.png) repeat center center;
+  background: #555555 url("jsp/../img/jsp-pattern.png") repeat center center;
 }
 .section-footer .container {
   padding: 10px 0;
