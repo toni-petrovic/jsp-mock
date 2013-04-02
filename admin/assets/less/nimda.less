@@ -9,8 +9,10 @@
  */
 
 // Core variables and mixins
-@import "../../../less/variables.less"; // Modify this for custom colors, font-sizes, etc
+@import "../../../less/variables.less"; // Modify this for custom colors, font-sizes, e
+@import "variables.less"; // Modify this for custom colors, font-sizes, etc
 @import "../../../less/mixins.less";
+@import "mixins.less";
 
 // CSS Reset
 @import "../../../less/reset.less";
@@ -19,6 +21,7 @@
 @import "../../../less/scaffolding.less";
 @import "../../../less/grid.less";
 @import "../../../less/layouts.less";
+@import "layouts.less";
 
 // Base CSS
 @import "../../../less/type.less";
@@ -36,7 +39,7 @@
 // Components: Buttons & Alerts
 @import "../../../less/buttons.less";
 @import "../../../less/button-groups.less";
-@import "../../../less/alerts.less"; // Note: alerts share common CSS with buttons and thus have styles in buttons.les
+@import "../../../less/alerts.less"; // Note: alerts share common CSS with buttons and thus have styles in buttons.less
 
 // Components: Nav
 @import "../../../less/navs.less";
@@ -63,3 +66,4 @@
 @import "../../../less/utilities.less"; // Has to be last to override when necessary
 
 // Custom styles
+@import "w2ui.less";
