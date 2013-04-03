@@ -562,12 +562,14 @@ body {
   height: 100%;
 }
 #layout_nimda_panel_left div.w2ui-panel-content {
-  background-color: cornflowerblue;
   -webkit-box-shadow: inset -10px 0px 15px -5px rgba(0, 0, 0, 0.25);;
   -moz-box-shadow: inset -10px 0px 15px -5px rgba(0, 0, 0, 0.25);;
   -ms-box-shadow: inset -10px 0px 15px -5px rgba(0, 0, 0, 0.25);;
   -o-box-shadow: inset -10px 0px 15px -5px rgba(0, 0, 0, 0.25);;
   box-shadow: inset -10px 0px 15px -5px rgba(0, 0, 0, 0.25);;
+}
+#layout_nimda_panel_main div.w2ui-panel-content {
+  background-color: #ffffff;
 }
 p {
   margin: 0 0 10px;
@@ -3782,6 +3784,53 @@ input[type="submit"].btn.btn-mini {
   background-color: transparent;
   cursor: default;
 }
+.nav {
+  margin-bottom: 0;
+}
+.nav-pills > li > a {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+}
+.nav-pills > .active > a,
+.nav-pills > .active > a:hover,
+.nav-pills > .active > a:focus {
+  color: #ffffff;
+  background-color: #4d4e4f;
+  background-image: -moz-linear-gradient(top, #57585a, #3f3f3f);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#57585a), to(#3f3f3f));
+  background-image: -webkit-linear-gradient(top, #57585a, #3f3f3f);
+  background-image: -o-linear-gradient(top, #57585a, #3f3f3f);
+  background-image: linear-gradient(to bottom, #57585a, #3f3f3f);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff57585a', endColorstr='#ff3f3f3f', GradientType=0);
+  margin-bottom: 0;
+  position: relative;
+}
+.nav-pills > .active > a:after,
+.nav-pills > .active > a:hover:after,
+.nav-pills > .active > a:focus:after {
+  z-index: 50;
+  display: block;
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -0.03125em;
+  margin-top: -0.625em;
+  border-top: 0.625em transparent solid;
+  border-bottom: 0.625em transparent solid;
+  border-right: 0.625em white solid;
+}
+.nav-pills.nav-stacked > li > a {
+  margin-bottom: 0px;
+}
+.nav-pills.nav-stacked > li:last-child > a {
+  margin-bottom: 1px;
+}
 .navbar {
   overflow: visible;
   margin-bottom: 20px;
@@ -5222,11 +5271,7 @@ a.badge:focus {
   margin-bottom: 20px;
 }
 .accordion-group {
-  margin-bottom: 2px;
-  border: 1px solid #e5e5e5;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  border-radius: 4px;
+  margin-bottom: 0px;
 }
 .accordion-heading {
   border-bottom: 0;
@@ -5239,8 +5284,62 @@ a.badge:focus {
   cursor: pointer;
 }
 .accordion-inner {
-  padding: 9px 15px;
-  border-top: 1px solid #e5e5e5;
+  padding: 0;
+  background-color: #49afcd;
+  background-image: -moz-linear-gradient(top, #5bc0de, #2f96b4);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#5bc0de), to(#2f96b4));
+  background-image: -webkit-linear-gradient(top, #5bc0de, #2f96b4);
+  background-image: -o-linear-gradient(top, #5bc0de, #2f96b4);
+  background-image: linear-gradient(to bottom, #5bc0de, #2f96b4);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff5bc0de', endColorstr='#ff2f96b4', GradientType=0);
+}
+.sidebar .accordion-heading .accordion-toggle {
+  display: block;
+  padding: 8px 15px;
+  vertical-align: middle;
+  cursor: pointer;
+  color: #ffffff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #49afcd;
+  background-image: -moz-linear-gradient(top, #5bc0de, #2f96b4);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#5bc0de), to(#2f96b4));
+  background-image: -webkit-linear-gradient(top, #5bc0de, #2f96b4);
+  background-image: -o-linear-gradient(top, #5bc0de, #2f96b4);
+  background-image: linear-gradient(to bottom, #5bc0de, #2f96b4);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff5bc0de', endColorstr='#ff2f96b4', GradientType=0);
+  border-color: #2f96b4 #2f96b4 #1f6377;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  *background-color: #2f96b4;
+  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
+
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+  *border: 0;
+  border-bottom-color: #b3b3b3;
+  *margin-left: .3em;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05);
+  -moz-box-shadow: inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05);
+  -ms-box-shadow: inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05);
+  -o-box-shadow: inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05);
+}
+.sidebar .accordion-heading .accordion-toggle:hover,
+.sidebar .accordion-heading .accordion-toggle:focus,
+.sidebar .accordion-heading .accordion-toggle:active,
+.sidebar .accordion-heading .accordion-toggle.active,
+.sidebar .accordion-heading .accordion-toggle.disabled,
+.sidebar .accordion-heading .accordion-toggle[disabled] {
+  color: #ffffff;
+  background-color: #2f96b4;
+  *background-color: #2a85a0;
+}
+.sidebar .accordion-heading .accordion-toggle:active,
+.sidebar .accordion-heading .accordion-toggle.active {
+  background-color: #24748c \9;
+}
+.sidebar .accordion-heading .accordion-toggle:first-child {
+  *margin-left: 0;
 }
 .carousel {
   position: relative;
@@ -5668,7 +5767,7 @@ div.w2ui-layout > div div.w2ui-resizer {
 }
 div.w2ui-layout > div div.w2ui-resizer:hover,
 div.w2ui-layout > div div.w2ui-resizer.active {
-  background-color: #3486f2;
+  background-color: #ffa500;
 }
 /*************************************************
 * ---- Grid ----
