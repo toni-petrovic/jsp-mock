@@ -1,0 +1,46 @@
+// PILLS
+// -----
+
+.nav {
+  margin-bottom: 0;
+}
+
+// Links rendered as pills
+.nav-pills > li > a {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  .border-radius(0px);
+}
+
+// Active state
+.nav-pills > .active > a,
+.nav-pills > .active > a:hover,
+.nav-pills > .active > a:focus {
+  color: @white;
+//  background-color: @linkColor;
+  #gradient > .vertical(#57585a, #3f3f3f);
+  margin-bottom: 0;
+  position: relative;
+  &:after {
+    z-index: 50;
+    display: block;
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -0.03125em;
+    margin-top: -0.625em;
+    border-top: 0.625em transparent solid;
+    border-bottom: 0.625em transparent solid;
+    border-right: 0.625em white solid;
+  }
+}
+
+// Pills
+.nav-pills.nav-stacked > li > a {
+  margin-bottom: 0px;
+}
+.nav-pills.nav-stacked > li:last-child > a {
+  margin-bottom: 1px; // decrease margin to match sizing of stacked tabs
+}
