@@ -6,6 +6,7 @@
 // Parent container
 .accordion {
   margin-bottom: @baseLineHeight;
+  .box-shadow(0px 0px 10px 0px rgba(0, 0, 0, 0.35));
 }
 
 // Group == heading + body
@@ -18,6 +19,10 @@
 .accordion-heading .accordion-toggle {
   display: block;
   padding: 8px 15px;
+  span.badge {
+    float: right;
+    .accordion-badge;
+  }
 }
 
 // General toggle styles
@@ -28,22 +33,49 @@
 // Inner needs the styles because you can't animate properly with any styles on the element
 .accordion-inner {
   padding: 0;
-  #gradient > .vertical(@btnInfoBackground, @btnInfoBackgroundHighlight);
+  background-color: #ffffff;
+//  #gradient > .vertical(@sidebarBackground, @sidebarBackgroundHighlight);
+}
+
+.accordion-style(@sbBack: @sidebarBackground, @sbBackHigh: @sidebarBackgroundHighlight, @sbBorderTop: @sidebarBorderTop, @sbBorderBottom: @sidebarBorderBottom) {
+  display: block;
+  padding: 8px 12px;
+  vertical-align: middle;
+  cursor: pointer;
+  color: @white;
+  text-shadow: 0px -1px 0px rgba(0,0,0,0.5);
+  text-decoration: none;
+  #gradient > .vertical(@sbBack, @sbBackHigh);
+  border: 1px solid @sbBorderTop;
+  border-left: none; border-right: none;
+  *border: 0; // Remove the border to prevent IE7's black border on input:focus
+  border-bottom-color: @sbBorderBottom;
+  .ie7-restore-left-whitespace(); // Give IE7 some love
+  .box-shadow(~"inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05)");
+}
+
+.accordion-badge {
+  position: relative;
+  background-color: rgba(0,0,0,0.3);
+  padding: 3px 8px 3px 7px;
+  .box-shadow(~"inset 0px 2px 3px 0px rgba(0, 0, 0, 0.35), inset 0px -1px 2px 0px rgba(0, 0, 0, 0.05)");
+  &:after {
+    position: absolute;
+    content: '';
+    bottom: 0px; left: 0;
+    width: 100%; height: 100%;
+    border-radius: 7px;
+    border-bottom: 1px solid rgba(255,255,255,0.35);
+  }
 }
 
 .sidebar {
-  .accordion-heading {
-    .accordion-toggle {
-      display: block;
-      padding: 8px 15px;
-      vertical-align: middle;
-      cursor: pointer;
-      .buttonBackground(@btnInfoBackground, @btnInfoBackgroundHighlight);
-//      border: 1px solid @btnBorder; border-left: none; border-right: none;
-      *border: 0; // Remove the border to prevent IE7's black border on input:focus
-      border-bottom-color: darken(@btnBorder, 10%);
-      .ie7-restore-left-whitespace(); // Give IE7 some love
-      .box-shadow(~"inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05)");
+  .accordion-heading .accordion-toggle {
+      .accordion-style(@sidebarBackground, @sidebarBackgroundHighlight, @sidebarBorderTop, @sidebarBorderBottom);
     }
+  }
+  .active {
+    .accordion-heading .accordion-toggle {
+      .accordion-style(@sidebarActiveBackground, @sidebarActiveBackgroundHighlight, @sidebarActiveBorderTop, @sidebarActiveBorderBottom);
   }
 }
