@@ -1,0 +1,60 @@
+.pagination {
+  background-color: @actionsTableBackground;
+  text-align: center;
+  padding: 0px;
+  .box-shadow(~"inset 0px 3px 1px -1px rgba(0, 0, 0, 0.15)");
+  .border-radius(@baseBorderRadius);
+
+  ul {
+    margin: 6px 5px 1px 5px;
+
+    li {
+      margin-left: 0px;
+      display: inline-block;
+    }
+
+  }
+
+  .li-style(@color, @text-shadow, @bgTop, @bgBottom, @borderTop, @borderLeft){
+    color: @color;
+    text-shadow: 0 1px 0 @text-shadow;
+    font-weight: bold;
+    #gradient > .vertical(@bgTop, @bgBottom);
+    border: 1px solid @borderTop; border-left-color: @borderLeft;
+    border-left-width: 1px; border-right-width: 0px; border-bottom-width: 0px;
+  }
+
+  ul > li > a,
+  ul > li > span {
+    margin: 0;
+
+    float: left; // Collapse white-space
+    padding: 4px 12px;
+    line-height: @baseLineHeight;
+    text-decoration: none;
+    .li-style(#17677e, #8bccde, #6ac4de, #3da5c2, #9fdaec, #8bccde);
+    .border-radius(@baseBorderRadius);
+  }
+
+  ul > li > a:hover,
+  ul > li > a:focus,
+  ul > .active > a,
+  ul > .active > span {
+    .li-style(
+      darken(#17677e,20%),
+      darken(#8bccde,20%),
+      darken(#6ac4de,20%),
+      darken(#3da5c2,20%),
+      darken(#9fdaec,20%),
+      darken(#8bccde,20%)
+    );
+  }
+
+  ul > li > a:active{
+    @bg: #3da5c2;
+    #gradient > .vertical(@bg, darken(@bg,10%));
+    border-color: #17677e;
+    .box-shadow(~"inset 1px 2px 2px rgba(0,0,0,.25), 0 1px 2px rgba(0,0,0,.15)");
+  }
+
+}

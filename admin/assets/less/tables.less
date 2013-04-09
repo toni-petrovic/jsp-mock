@@ -1,0 +1,31 @@
+.table-bordered {
+
+  background-color: @actionsTableBackground;
+  border: none;
+
+  th, td {
+    border: none;
+  }
+
+  thead,tbody {
+    th, td {
+      color: lighten(@sidebarBackground, 30%);
+      text-shadow: 0 -1px 0 rgba(0,0,0,0.5);
+    }
+  }
+
+  tbody {
+    > tr:nth-child(odd) > td,
+    > tr:nth-child(odd) > th {
+      border-top: 1px solid #4f5864;
+      #gradient > .vertical(#4a525d, #454d58);
+    }
+    > tr:nth-child(even) > td,
+    > tr:nth-child(even) > th {
+      border-top: 1px solid #3d444e;
+      #gradient > .vertical(#454d57, #454d57);
+    }
+  }
+
+
+}

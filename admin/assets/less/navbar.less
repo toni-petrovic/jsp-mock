@@ -1,0 +1,33 @@
+.actions {
+
+  .navbar-inner {
+    #gradient > .vertical(@actionsBackground, @actionsBackgroundHighlight);
+    border: 1px solid lighten(@actionsBackground, 10%);
+    border-bottom-color: @actionsBorderBottom;
+    border-right: none;
+    min-height: 60px;
+    .box-shadow(0px 4px 1px -1px rgba(0, 0, 0, 0.35));
+  }
+
+  // Links
+  .navbar .nav > li > a {
+    float: none;
+    // Vertically center the text given @navbarHeight
+    padding: 10px 15px 10px 15px;
+    text-decoration: none;
+    font-weight: bold;
+    line-height: @actionsNavbarHeight - 20px;
+    vertical-align: middle;
+
+    .text-shadow;
+
+    &:focus,
+    &:hover {
+      text-shadow: 0 0 10px @sidebarActiveBackground;
+      text-decoration: none;
+    }
+
+  }
+
+}
+//end - actions

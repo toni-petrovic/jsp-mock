@@ -10,9 +10,20 @@
         <div class="navbar">
             <div class="navbar-inner">
                 <ul class="nav">
-                    <li class="active"><a href="#">Home</a></li>
-                    <li><a href="#">Link</a></li>
-                    <li><a href="#">Link</a></li>
+                    <li><a href="#"><i class="icon-plus-sign icon-3x"></i></a></li>
+                    <li><a href="#"><i class="icon-beer icon-3x"></i></a></li>
+                    <li><a href="#"><i class="icon-adjust icon-3x"></i></a></li>
+                </ul>
+                <ul class="nav pull-right">
+                    <li>
+                        <a href="">Testing</a>
+                        <!--<form class="bs-docs-example">-->
+                            <!--<div class="input-append">-->
+                                <!--<input class="span2" id="appendedInputButton" type="text">-->
+                                <!--<button class="btn" type="button">Go!</button>-->
+                            <!--</div>-->
+                        <!--</form>-->
+                    </li>
                 </ul>
             </div>
         </div>
@@ -20,7 +31,7 @@
 
     <section id="data" class="data">
 
-        <table class="table table-striped">
+        <table class="table table-bordered">
             <thead>
             <tr>
                 <th>#</th>
@@ -88,14 +99,18 @@
         </table>
 
         <div class="pagination">
+            <ul class="pull-left">
+                <li><a href="#"><i class="icon-arrow-left"></i> Previous</a></li>
+            </ul>
             <ul>
-                <li><a href="#">«</a></li>
                 <li><a href="#">1</a></li>
-                <li><a href="#">2</a></li>
+                <li class="active"><span>2</span></li>
                 <li><a href="#">3</a></li>
                 <li><a href="#">4</a></li>
                 <li><a href="#">5</a></li>
-                <li><a href="#">»</a></li>
+            </ul>
+            <ul class="pull-right">
+                <li><a href="#">Next <i class="icon-arrow-right"></i></a></li>
             </ul>
         </div>
 
