@@ -1,0 +1,30 @@
+.alert{
+  .alert-style(@successBackground);
+}
+
+.alert-danger, .alert-error {
+  .alert-style(@errorBackground);
+}
+
+.alert-style(@baseColor: #c9253e) {
+  #gradient > .vertical(@baseColor, darken(@baseColor,20%));
+  border: 1px solid lighten(@baseColor, 10%);
+  border-bottom-color: darken(@baseColor, 25%);
+  border-right: none;
+  min-height: 60px;
+  color: darken(@baseColor, 30%);
+  text-shadow: 0 1px 0 lighten(@baseColor, 5%);
+  font-weight: bold;
+  .box-shadow(0px 4px 1px -1px darken(@baseColor, 30%));
+  margin-bottom: 30px;
+  h4{
+    color: darken(@baseColor, 30%);
+    text-shadow: 0 1px 0 lighten(@baseColor, 5%);
+    margin-bottom: 5px;
+  }
+  .close {
+    color: darken(@baseColor, 30%);
+    text-shadow: 0 1px 0 lighten(@baseColor, 5%);
+    top: -5px; right: -20px;
+  }
+}

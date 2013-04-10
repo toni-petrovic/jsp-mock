@@ -1,0 +1,32 @@
+.btn {
+  font-weight: bold;
+  padding: 8px 16px;
+}
+
+.btn-default.active {
+  color: rgba(255,255,255,.75);
+}
+
+.btn-default {
+  .buttonBackground(@btnDefaultBackground, @btnDefaultBackgroundHighlight, @btnDefaultColor, 0 1px 0 rgba(255,255,255,0.25));
+  border: 1px solid @btnDefaultBorder;
+  border-bottom-color: darken(@btnDefaultBackgroundHighlight, 20%);
+}
+
+.btn-primary {
+  .buttonBackground(@btnPrimaryBackground, @btnPrimaryBackgroundHighlight, @btnPrimaryColor, 0 1px 0 rgba(255,255,255,0.25));
+  border: 1px solid @btnPrimaryBackgroundHighlight;
+  border-bottom-color: darken(@btnPrimaryBackgroundHighlight, 10%);
+}
+
+.btn-info {
+  .buttonBackground(@btnInfoBackground, @btnInfoBackgroundHighlight, darken(@btnInfoBackgroundHighlight, 20%), 0 1px 0 rgba(255,255,255,0.25));
+  border: 1px solid darken(@btnInfoBackgroundHighlight, 5%);
+  border-bottom-color: darken(@btnInfoBackgroundHighlight, 10%);
+}
+
+.btn-warning {
+  .buttonBackground(@btnWarningBackground, @btnWarningBackgroundHighlight, darken(@btnWarningBackgroundHighlight, 20%), 0 1px 0 rgba(255,255,255,0.25));
+  border: 1px solid darken(@btnWarningBackgroundHighlight, 15%);
+  border-bottom-color: darken(@btnWarningBackgroundHighlight, 17%);
+}
