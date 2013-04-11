@@ -25,6 +25,23 @@ input[type="color"],
   }
 }
 
+// Warning
+.control-group.warning {
+  .nimdaFormFieldState(lighten(@warningBackground, 10%), @warningBackground, @warningBackground, 0 -1px 0px rgba(0,0,0,0.75));
+}
+// Error
+.control-group.error {
+  .nimdaFormFieldState(darken(@errorBackground, 25%), @errorBackground, @errorBackground);
+}
+// Success
+.control-group.success {
+  .nimdaFormFieldState(lignten(@successBackground, 10%), @successBackground, @successBackground, 0 -1px 0px rgba(0,0,0,0.5));
+}
+// Success
+.control-group.info {
+  .nimdaFormFieldState(lignten(@infoBackground, 10%), @infoBackground, @infoText, 0 -1px 0px rgba(0,0,0,0.75));
+}
+
 .form-actions {
   border-top: none;
   .box-shadow(~"inset 0px 3px 1px -1px rgba(0, 0, 0, 0.35), inset 0px -2px 1px -1px rgba(0, 0, 0, 0.25)");

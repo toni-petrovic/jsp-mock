@@ -34,7 +34,20 @@
 @inputBorder: lighten(@bodyBackground, 20%);
 
 // Alerts
-@successBackground: #2799db;
+@successBaseColor: #2799db;
+@successBackground: @successBaseColor;
+@successText: lighten(#2799db,10%);
+@successBorder: darken(spin(@successBaseColor, -10), 5%);
+
+@warningText:             lighten(#f19d20,10%);
+@warningBackground:       #f19d20;
+@warningBorder:           darken(spin(@warningBackground, -10), 3%);
+
+@infoText:                lighten(#8bb137, 10%);
+@infoBackground:          #8bb137;
+@infoBorder:              darken(spin(@infoBackground, -10), 7%);
+
+
 @errorBackground: #c9253e;
 
 // Table

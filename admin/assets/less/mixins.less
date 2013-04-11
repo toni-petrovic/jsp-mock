@@ -7,13 +7,83 @@
   text-shadow: 0 1px 0 @actionsBackground;
 }
 
-.formFieldState(@textColor: #555, @borderColor: #ccc, @backgroundColor: #f5f5f5) {
+.nimdaFormFieldState(@labelColor: #fff, @backgroundColor: #f5f5f5, @textColor: #555, @textShadow: 0 1px 0 rgba(255,255,255,0.15)) {
 // Set the text color
-  .control-label,
-  .help-block,
-  .help-inline {
-    color: @textColor;
+
+  .control-label {
+    color: @labelColor;
+    text-shadow: @textShadow;
   }
+
+  .help-inline {
+    margin-left: -10px;
+    .help-inline-mixing;
+  }
+
+
+  .help-block-top {
+    margin-left: 0;
+    .help-inline-mixing;
+    &:after {
+      top: 100%; left: 10%;
+      border-top:7px solid darken(@backgroundColor, 20%);
+      border-right: 7px solid transparent;
+      border-left: 7px solid transparent;
+      border-bottom: 7px solid transparent;
+    }
+  }
+
+  .help-on-top {
+    input, select, textarea {
+      clear: both; float: left;
+      margin-top: 2px;
+    }
+  }
+
+  .help-block {
+      margin-left: 0; margin-top: 3px;
+      float: left; clear: left;
+      .help-inline-mixing;
+      &:after {
+        top: -50%; right: 90%;
+        border-bottom:7px solid lighten(@backgroundColor, 10%);
+        border-right: 7px solid transparent;
+        border-left: 7px solid transparent;
+        border-top: 7px solid transparent;
+      }
+  }
+
+
+  .help-inline-mixing {
+    padding: 4px 8px;
+    display: inline-block; position: relative;
+    color: darken(@backgroundColor, 30%);
+    text-shadow: 0 1px 0 lighten(@backgroundColor, 5%);
+    font-weight: bold;
+    #gradient > .vertical(@backgroundColor, darken(@backgroundColor, 20%));
+    .border-radius(@baseBorderRadius);
+    border: 1px solid @backgroundColor; border-left-color: transparent; border-bottom-color: darken(@backgroundColor,30%);
+
+    &:before{
+      width: 100%; height: 100%;
+      display: inline-block; position: absolute;
+      top:0; left:0; content: ' '; z-index: 2;
+      .border-radius(@baseBorderRadius);
+      border-top: 1px solid lighten(@backgroundColor,20%);
+    }
+    &:after {
+      content: ' '; display: block;
+      width: 0; height: 0;
+      position: absolute;
+      top: 25%;
+      right: 100%;
+      z-index: 2;
+      border-top: 7px solid transparent;
+      border-bottom: 7px solid transparent;
+      border-right:7px solid darken(@backgroundColor, 10%);
+    }
+  }
+
 // Style inputs accordingly
   .checkbox,
   .radio,
@@ -25,11 +95,11 @@
   input,
   select,
   textarea {
-    border-color: @borderColor;
+    border-color: darken(@backgroundColor,10%);
     .box-shadow(inset 0 1px 1px rgba(0,0,0,.075)); // Redeclare so transitions work
     &:focus {
-      border-color: darken(@borderColor, 10%);
-      @shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 6px lighten(@borderColor, 20%);
+      border-color: darken(@backgroundColor, 10%);
+      @shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px lighten(@backgroundColor, 20%);
       .box-shadow(@shadow);
     }
   }
