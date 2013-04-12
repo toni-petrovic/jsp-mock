@@ -38,6 +38,9 @@ input[type="color"],
     }
     .form-actions{
       padding-left: @label + 20 + @gap;
+      .box-shadow(none);
+      background-color: rgba(0,0,0,0.2);
+      .border-radius(0 0 @baseBorderRadius @baseBorderRadius);
     }
   }
 }
