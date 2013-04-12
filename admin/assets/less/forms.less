@@ -25,6 +25,23 @@ input[type="color"],
   }
 }
 
+.tab-container {
+  @padding: 20px 30px 0px 30px;
+  @gap: 30px;
+  @label: 160px;
+  .form-horizontal {
+    .form-content {
+      padding: @padding;
+    }
+    .control-label {
+      width: @label;
+    }
+    .form-actions{
+      padding-left: @label + 20 + @gap;
+    }
+  }
+}
+
 // Warning
 .control-group.warning {
   .nimdaFormFieldState(lighten(@warningBackground, 10%), @warningBackground, @warningBackground, 0 -1px 0px rgba(0,0,0,0.75));
