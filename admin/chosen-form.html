@@ -27,65 +27,29 @@
                 <div class="control-group">
                     <label class="control-label" for="inputPassword">Password</label>
                     <div class="controls">
-                        <input type="password" id="inputPassword" placeholder="Password">
+                        <select data-placeholder="Choose a Country..." class="chzn-select" style="width:350px;" tabindex="1">
+                            <option value=""></option>
+                            <option value="United States">United States</option>
+                            <option value="United Kingdom">United Kingdom</option>
+                            <option value="Afghanistan">Afghanistan</option>
+                            <option value="Aland Islands">Aland Islands</option>
+                            <option value="Albania">Albania</option>
+                            <option value="Algeria">Algeria</option>
+                            <option value="American Samoa">American Samoa</option>
+                            <option value="Andorra">Andorra</option>
+                            <option value="Angola">Angola</option>
+                            <option value="Anguilla">Anguilla</option>
+                            <option value="Antarctica">Antarctica</option>
+                            <option value="Antigua and Barbuda">Antigua and Barbuda</option>
+                            <option value="Argentina">Argentina</option>
+                            <option value="Armenia">Armenia</option>
+                            <option value="Aruba">Aruba</option>
+                            <option value="Australia">Australia</option>
+                        </select>
                     </div>
                 </div>
 
-                <div class="control-group warning">
-                    <label class="control-label" for="inputWarning">Input with warning</label>
-                    <div class="controls">
-                        <input type="text" id="inputWarning">
-                        <span class="help-inline">Something may have gone wrong</span>
-                    </div>
-                </div>
 
-                <div class="control-group error">
-                    <label class="control-label" for="inputWarningTop">Input with warning</label>
-                    <div class="controls help-on-top">
-                        <span class="help-block-top">Something may have gone wrong</span>
-                        <input type="text" id="inputWarningTop">
-                    </div>
-                </div>
-
-                <div class="control-group error">
-                    <label class="control-label" for="inputError">Input with error</label>
-                    <div class="controls">
-                        <input type="text" id="inputError">
-                        <span class="help-inline">Please correct the error</span>
-                    </div>
-                </div>
-
-                <div class="control-group info">
-                    <label class="control-label" for="inputInfo">Input with info</label>
-                    <div class="controls">
-                        <input type="text" id="inputInfo">
-                        <span class="help-inline">Username is already taken</span>
-                    </div>
-                </div>
-
-                <div class="control-group warning">
-                    <label class="control-label" for="inputWarningBottom">Input with warning</label>
-                    <div class="controls">
-                        <input type="text" id="inputWarningBottom">
-                        <span class="help-block">Something may have gone wrong, very very wrong!</span>
-                    </div>
-                </div>
-
-                <div class="control-group success">
-                    <label class="control-label" for="inputSuccess">Input with success</label>
-                    <div class="controls">
-                        <input type="text" id="inputSuccess">
-                        <span class="help-inline">Woohoo!</span>
-                    </div>
-                </div>
-
-                <div class="control-group success">
-                    <label class="control-label" for="inputSuccessTop">Input with success</label>
-                    <div class="controls help-on-top">
-                        <span class="help-block-top">Woohoo!</span>
-                        <input type="text" id="inputSuccessTop">
-                    </div>
-                </div>
 
                 <div class="form-actions">
                     <button type="submit" class="btn btn-primary">Save changes</button>
@@ -103,3 +67,9 @@
     </div>
 
 </section>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        $(".chzn-select").chosen();
+    });
+</script>
