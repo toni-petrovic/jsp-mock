@@ -25,11 +25,12 @@ input[type="color"],
   }
 }
 
-.tab-container {
+.tab-content {
   @padding: 20px 30px 0px 30px;
   @gap: 30px;
   @label: 160px;
   .form-horizontal {
+    margin-bottom: 0;
     .form-content {
       padding: @padding;
     }
@@ -37,6 +38,7 @@ input[type="color"],
       width: @label;
     }
     .form-actions{
+      margin-bottom: 0;
       padding-left: @label + 20 + @gap;
       .box-shadow(none);
       background-color: rgba(0,0,0,0.2);

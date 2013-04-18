@@ -12,103 +12,177 @@
             <div class="tab-middle">
 
                 <div class="btn-group" data-toggle="buttons-radio">
-                    <button type="button" class="btn btn-primary active">User Registration</button>
-                    <button type="button" class="btn btn-primary">User Pictures</button>
-                    <button type="button" class="btn btn-primary">User Credit Cards</button>
+                    <a href="#home" data-toggle="tab" class="btn btn-primary active">User Registration</a>
+                    <a href="#profile" data-toggle="tab" class="btn btn-primary">User Pictures</a>
+                    <a type="button" data-toggle="tab" class="btn btn-primary">User Credit Cards</a>
                 </div>
 
-                <div class="tab-container">
+                <div class="tab-content">
 
-                    <form class="form-horizontal">
+                    <div class="tab-pane active" id="home">
+                        <form class="form-horizontal">
 
-                        <div class="form-content">
+                            <div class="form-content">
 
-                            <div class="alert alert-block">
-                                <button type="button" class="close" data-dismiss="alert">&times;</button>
-                                <h4>Warning!</h4>
-                                Best check yo self, you're not...
-                            </div>
-
-                            <div class="control-group">
-                                <label class="control-label" for="inputEmail">Email</label>
-                                <div class="controls">
-                                    <input type="text" id="inputEmail" placeholder="Email">
+                                <div class="alert alert-block">
+                                    <button type="button" class="close" data-dismiss="alert">&times;</button>
+                                    <h4>Warning!</h4>
+                                    Best check yo self, you're not...
                                 </div>
-                            </div>
 
-                            <div class="control-group">
-                                <label class="control-label" for="inputPassword">Password</label>
-                                <div class="controls">
-                                    <input type="password" id="inputPassword" placeholder="Password">
+                                <div class="control-group">
+                                    <label class="control-label" for="inputEmail">Email</label>
+                                    <div class="controls">
+                                        <input type="text" id="inputEmail" placeholder="Email">
+                                    </div>
                                 </div>
-                            </div>
 
-                            <div class="control-group warning">
-                                <label class="control-label" for="inputWarning">Input with warning</label>
-                                <div class="controls">
-                                    <input type="text" id="inputWarning">
-                                    <span class="help-inline">Something may have gone wrong</span>
+                                <div class="control-group">
+                                    <label class="control-label" for="inputPassword">Password</label>
+                                    <div class="controls">
+                                        <input type="password" id="inputPassword" placeholder="Password">
+                                    </div>
                                 </div>
-                            </div>
 
-                            <div class="control-group error">
-                                <label class="control-label" for="inputWarningTop">Input with warning</label>
-                                <div class="controls help-on-top">
-                                    <span class="help-block-top">Something may have gone wrong</span>
-                                    <input type="text" id="inputWarningTop">
+                                <div class="control-group warning">
+                                    <label class="control-label" for="inputWarning">Input with warning</label>
+                                    <div class="controls">
+                                        <input type="text" id="inputWarning">
+                                        <span class="help-inline">Something may have gone wrong</span>
+                                    </div>
                                 </div>
-                            </div>
 
-                            <div class="control-group error">
-                                <label class="control-label" for="inputError">Input with error</label>
-                                <div class="controls">
-                                    <input type="text" id="inputError">
-                                    <span class="help-inline">Please correct the error</span>
+                                <div class="control-group error">
+                                    <label class="control-label" for="inputWarningTop">Input with warning</label>
+                                    <div class="controls help-on-top">
+                                        <span class="help-block-top">Something may have gone wrong</span>
+                                        <input type="text" id="inputWarningTop">
+                                    </div>
                                 </div>
-                            </div>
 
-                            <div class="control-group info">
-                                <label class="control-label" for="inputInfo">Input with info</label>
-                                <div class="controls">
-                                    <input type="text" id="inputInfo">
-                                    <span class="help-inline">Username is already taken</span>
+                                <div class="control-group error">
+                                    <label class="control-label" for="inputError">Input with error</label>
+                                    <div class="controls">
+                                        <input type="text" id="inputError">
+                                        <span class="help-inline">Please correct the error</span>
+                                    </div>
                                 </div>
-                            </div>
 
-                            <div class="control-group warning">
-                                <label class="control-label" for="inputWarningBottom">Input with warning</label>
-                                <div class="controls">
-                                    <input type="text" id="inputWarningBottom">
-                                    <span class="help-block">Something may have gone wrong, very very wrong!</span>
+                                <div class="control-group info">
+                                    <label class="control-label" for="inputInfo">Input with info</label>
+                                    <div class="controls">
+                                        <input type="text" id="inputInfo">
+                                        <span class="help-inline">Username is already taken</span>
+                                    </div>
                                 </div>
-                            </div>
 
-                            <div class="control-group success">
-                                <label class="control-label" for="inputSuccess">Input with success</label>
-                                <div class="controls">
-                                    <input type="text" id="inputSuccess">
-                                    <span class="help-inline">Woohoo!</span>
+                                <div class="control-group warning">
+                                    <label class="control-label" for="inputWarningBottom">Input with warning</label>
+                                    <div class="controls">
+                                        <input type="text" id="inputWarningBottom">
+                                        <span class="help-block">Something may have gone wrong, very very wrong!</span>
+                                    </div>
                                 </div>
-                            </div>
 
-                            <div class="control-group success">
-                                <label class="control-label" for="inputSuccessTop">Input with success</label>
-                                <div class="controls help-on-top">
-                                    <span class="help-block-top">Woohoo!</span>
-                                    <input type="text" id="inputSuccessTop">
+                                <div class="control-group success">
+                                    <label class="control-label" for="inputSuccess">Input with success</label>
+                                    <div class="controls">
+                                        <input type="text" id="inputSuccess">
+                                        <span class="help-inline">Woohoo!</span>
+                                    </div>
                                 </div>
+
+                                <div class="control-group success">
+                                    <label class="control-label" for="inputSuccessTop">Input with success</label>
+                                    <div class="controls help-on-top">
+                                        <span class="help-block-top">Woohoo!</span>
+                                        <input type="text" id="inputSuccessTop">
+                                    </div>
+                                </div>
+
+
                             </div>
 
 
-                        </div>
+                            <div class="form-actions">
+                                <button type="submit" class="btn btn-primary">Save changes</button>
+                                <button type="button" class="btn btn-default">Cancel</button>
+                            </div>
 
+                        </form>
+                    </div>
 
-                        <div class="form-actions">
-                            <button type="submit" class="btn btn-primary">Save changes</button>
-                            <button type="button" class="btn btn-default">Cancel</button>
-                        </div>
+                    <div class="tab-pane" id="profile">
 
-                    </form>
+                        <table class="table table-bordered">
+                            <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>First Name</th>
+                                <th>Last Name</th>
+                                <th>Username</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                                <td>@mdo</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Jacob</td>
+                                <td>Thornton</td>
+                                <td>@fat</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Larry</td>
+                                <td>the Bird</td>
+                                <td>@twitter</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                                <td>@mdo</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Jacob</td>
+                                <td>Thornton</td>
+                                <td>@fat</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Larry</td>
+                                <td>the Bird</td>
+                                <td>@twitter</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                                <td>@mdo</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Jacob</td>
+                                <td>Thornton</td>
+                                <td>@fat</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Larry</td>
+                                <td>the Bird</td>
+                                <td>@twitter</td>
+                            </tr>
+                            </tbody>
+                        </table>
+
+                    </div>
+
 
                 </div>
 
