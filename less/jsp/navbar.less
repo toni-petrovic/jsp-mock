@@ -3,14 +3,51 @@
 }
 
 .navbar{
+//  .brand {
+//    background: transparent url(../img/jsp-text.png) no-repeat left center;
+//    content: '';
+//    text-indent: -99999px;
+//    width: 100px;
+//    background-size: auto 100%;
+//    margin-right: 20px;
+//  }
+
+
+
   .brand {
-    background: transparent url(../img/jsp-text.png) no-repeat left center;
-    content: '';
-    text-indent: -99999px;
-    width: 100px;
-    background-size: auto 100%;
-    margin-right: 20px;
+    padding-right: 0;
+    padding-left: 0;
+    margin-left: 20px;
+    float: right;
+    font-weight: bold;
+    font-size: 18px;
+    color: darken(@navbarInverseBackgroundHighlight, 5%);
+    text-shadow: 0 1px 0 rgba(255,255,255,.1), 0 0 30px rgba(255,255,255,.125);
+    -webkit-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    transition: all .2s linear;
+    &:hover {
+      text-decoration: none;
+      text-shadow: 0 1px 0 rgba(255,255,255,.1), 0 0 30px rgba(255,255,255,.4);
+    }
   }
+
+  .form-search {
+    input {
+      width: 150px;
+      -webkit-transition: width 0.2s ease-in-out;
+      -moz-transition: width 0.2s ease-in-out;
+      -ms-transition: all 0.2s ease-in-out;
+      -o-transition: all 0.2s ease-in-out;
+      transition: width 0.2s ease-in-out;
+      &:focus {
+        width: 200px;
+      }
+    }
+  }
+
+
+
   .nav > .active > a,
   .nav > .active > a:hover,
   .nav > .active > a:focus {
