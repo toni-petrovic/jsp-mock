@@ -205,7 +205,7 @@ textarea {
 }
 body {
   margin: 0;
-  font-family: "MyriadProRegular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "PTSans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 22px;
   color: #333333;
@@ -551,9 +551,16 @@ a:focus {
   src: url('../fonts/myriadpro-boldcond.eot') format('embedded-opentype'), url('../fonts/myriadpro-boldcond.woff') format('woff'), url('../fonts/myriadpro-boldcond.ttf') format('truetype'), url('../fonts/myriadpro-boldcond.svg#MyriadProBoldCondensed') format('svg');
 }
 @font-face {
-  font-family: 'MyriadProRegular';
-  src: url('../fonts/myriadpro-regular.eot');
-  src: url('../fonts/myriadpro-regular.eot') format('embedded-opentype'), url('../fonts/myriadpro-regular.woff') format('woff'), url('../fonts/myriadpro-regular.ttf') format('truetype'), url('../fonts/myriadpro-regular.svg#MyriadProRegular') format('svg');
+  font-family: 'PTSans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('PT Sans'), local('PTSans-Regular'), url('../fonts/ptsans-regular.woff') format('woff');
+}
+@font-face {
+  font-family: 'PTSans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('PT Sans Bold'), local('PTSans-Bold'), url(~'../fonts/ptsans-bold.woff') format('woff');
 }
 p {
   margin: 0 0 11px;
@@ -902,7 +909,7 @@ input,
 button,
 select,
 textarea {
-  font-family: "MyriadProRegular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "PTSans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 label {
   display: block;
@@ -5410,7 +5417,7 @@ body {
   right: 0;
   bottom: 0;
   left: 0;
-  background: url("../img/jsp-pattern.png") repeat center center;
+  background: url('../img/jsp-pattern.png') repeat center center;
 }
 .overlay-image {
   content: '';
@@ -5420,7 +5427,7 @@ body {
   right: 0;
   bottom: 0;
   left: 0;
-  background: url("../img/jsp-pattern.png") repeat center center;
+  background: url('../img/jsp-pattern.png') repeat center center;
 }
 /* Set the fixed height of the footer here */
 #push,
@@ -5456,8 +5463,8 @@ body {
   z-index: 2;
 }
 .section-title .logo {
-  background: transparent url("../img/jsp-title.png") no-repeat center center;
-  background-size: 100% auto;
+  background: transparent url('../img/jsp-title.png') no-repeat center center;
+  height: 125px;
   margin-top: 10px;
   padding: 30px 0;
 }
@@ -5503,7 +5510,7 @@ body {
   border-top: 2px solid #fab600;
   color: #ffffff;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
-  background: #555555 url("../img/jsp-pattern.png") repeat center center;
+  background: #555555 url('../img/jsp-pattern.png') repeat center center;
 }
 .section-footer .container {
   padding: 10px 0;
